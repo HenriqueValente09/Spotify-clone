@@ -1,0 +1,35 @@
+#showcase {
+    height: 100vh;
+    background: url('../img/showcase.webp') center center/cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    .showcase-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 4.6rem;
+        }
+        p {
+            margin: 15px 0;
+            font-size: 1.1rem;
+        }
+        .btn-primary {
+            background: #1ed760;
+            color: white;
+            text-transform: uppercase;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+    }
+}
