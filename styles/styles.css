@@ -4,10 +4,16 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
 }
 
 body {
   font-family: Roboto;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
 }
 
 #navbar {
@@ -38,11 +44,6 @@ body {
   padding: 20px 0;
 }
 
-#navbar .navbar-container .logo {
-  height: 40px;
-  width: auto;
-}
-
 #navbar .navbar-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,10 +54,17 @@ body {
 
 #navbar .navbar-container ul li {
   padding: 0 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #navbar .navbar-container ul li:nth-child(3) {
   border-right: 1px solid white;
+}
+
+#navbar .navbar-container ul li:hover {
+  color: #1ed760;
+  cursor: pointer;
 }
 
 #showcase {
@@ -110,8 +118,90 @@ body {
   font-weight: bold;
 }
 
-footer {
-  height: 50vh;
-  background: #353742;
+#footer {
+  background: #000000;
+  color: white;
+}
+
+#footer .footer_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+}
+
+#footer .footer_content .footer_menu {
+  margin: 0 40px;
+}
+
+#footer .footer_content .footer_menu p {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 0.8rem;
+}
+
+#footer .footer_content .footer_menu .footer_menu-item {
+  margin: 25px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#footer .footer_content .footer_menu .footer_menu-item:hover {
+  color: #1ed760;
+  cursor: pointer;
+}
+
+#footer .footer_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 60%;
+  margin: auto;
+  padding: 15px 0;
+  font-weight: bold;
+  color: grey;
+  font-size: 0.75rem;
+}
+
+#footer .footer_info .footer_info-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .footer_info .footer_info-items .footer_info-item {
+  margin: 0 10px;
+}
+
+#footer .footer_info .rights .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer_info .rights .country .brazil_flag {
+  height: 20px;
+  width: auto;
+  display: inline-block;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
